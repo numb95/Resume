@@ -1,0 +1,212 @@
+%% start of file `template.tex'.
+%% Copyright 2006-2013 Xavier Danaux (xdanaux@gmail.com).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+
+\documentclass[11pt,a4paper,sans]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+
+% moderncv themes
+\moderncvstyle{casual}                             % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{green}                               % color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+%\renewcommand{\familydefault}{\sfdefault}         % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
+%\nopagenumbers{}                                  % uncomment to suppress automatic page numbering for CVs longer than one page
+
+% character encoding
+\usepackage[utf8]{inputenc}                       % if you are not using xelatex ou lualatex, replace by the encoding you are using
+%\usepackage{CJKutf8}                              % if you need to use CJK to typeset your resume in Chinese, Japanese or Korean
+
+% adjust the page margins
+\usepackage[scale=0.75]{geometry}
+%\setlength{\hintscolumnwidth}{3cm}                % if you want to change the width of the column with the dates
+%\setlength{\makecvtitlenamewidth}{10cm}           % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
+
+% personal data
+\name{AmirHossein}{Goodarzi}
+\title{Software Developer and Devops Engineer}                               % optional, remove / comment the line if not wanted
+\address{Moniriyeh}{Tehran}{Iran}% optional, remove / comment the line if not wanted; the "postcode city" and and "country" arguments can be omitted or provided empty
+\phone[mobile]{+989197812588}                   % optional, remove / comment the line if not wanted
+%\phone[fixed]{+2~(345)~678~901}                    % optional, remove / comment the line if not wanted
+%\phone[fax]{+3~(456)~789~012}                      % optional, remove / comment the line if not wanted
+\email{Amir@goodarzi.net}                               % optional, remove / comment the line if not wanted
+\homepage{www.goodarzi.net}                         % optional, remove / comment the line if not wanted
+%\extrainfo{additional information}                 % optional, remove / comment the line if not wanted
+\photo[100pt][0.4pt]{mee.jpg}                       % optional, remove / comment the line if not wanted; '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file
+\quote{}                                 % optional, remove / comment the line if not wanted
+
+% to show numerical labels in the bibliography (default is to show no labels); only useful if you make citations in your resume
+%\makeatletter
+%\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
+%\makeatother
+%\renewcommand*{\bibliographyitemlabel}{[\arabic{enumiv}]}% CONSIDER REPLACING THE ABOVE BY THIS
+
+% bibliography with mutiple entries
+%\usepackage{multibib}
+%\newcites{book,misc}{{Books},{Others}}
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+%\begin{CJK*}{UTF8}{gbsn}                          % to typeset your resume in Chinese using CJK
+%-----       resume       ---------------------------------------------------------
+\makecvtitle
+
+\section{Overview}
+I'm a software developer and DevOps who started from Windows based
+apps using Visual Basic and now using Python as his main programming
+language. After few years I started to work on web platform especially the
+backend side. After starting my career in backend development, I started
+to be a DevOps because I believe it’s a good opportunity when you do your backend job and operations, simultaneously.
+\section{Education}
+\cventry{2014--2018}{B.Sc}{Islamic Azad University - Tehran North Branch}{Tehran}{\textit{16.10}}{Robotics engineering}  % arguments 3 to 6 can be left empty
+\cventry{2009--2013}{Diploma}{Rahnama Highschool}{Tehran}{\textit{14}}{Mathematics and physics}
+
+\section{Thesis}
+\cvitem{title}{\emph{Implementing Neural network in FEM analysis}}
+\cvitem{supervisors}{Dr. Samir Zein}
+%\cvitem{description}{Short thesis abstract}
+
+\section{Experience}
+%\subsection{Vocational}
+\cventry{2016--current}{Software engineer and DevOps}{Bel IoT Lab. }{Tehran}{}{Bel Lab. is an Internet of thing laboratory at the Sharif University of Technology. The main
+products of Bel Lab are Bel OS and Bel Cloud. It's an android based OS for smartphones
+that was completely deleted the needs from Google. At there I do the DevOps career and
+wrote the backend of Bel Cloud (Email web interface, cloud storage, user management
+panel). The main challenge that I faced was to make a secure and high-performance system.
+enough and make a secure and high-performance system. .\newline{}
+\begin{itemize}%
+\item \textbf{Technologies}: Apache, Docker, KVM, Proxmox, LXD, Git, Android OS, Python, PHP, Django, Nginx, Gitlab CI
+\end{itemize}}
+%%new
+\cventry{2015--2016}{Backend Developer}{Arivan}{Tehran}{}{Arivan was a startup working on a gift recommend system (Vkado). The project and 
+also the startup was abandoned due to lack of resources. At Arivan I learned the basics 
+of databases and the best way to implement models of an MVC software.
+\begin{itemize}%
+\item \textbf{Technologies}: Python, Flask, Apache, Docker, Nginx
+\end{itemize}
+}
+%%
+\cventry{2015--2015}{frontend developer intern}{Gardeshnama}{Tehran}{}{Gardeshnama.com is a startup about tourism. At there I do some front-end development. I was intern at there
+\begin{itemize}%
+\item \textbf{Technologies}: Python, Django, React JS, Foundation
+\end{itemize}
+}
+\cventry{2014--2015}{Developer}{Phosphor Group}{Tehran}{}{phosphor Group is a software development group based in Tehran. Most of it's projects
+were based on WordPress and PHP. At there I was WordPress developer and system
+administrator. At Phosphor, despite the limited resources, I learned how to manage the performance issues with Apache
+\begin{itemize}%
+\item \textbf{Technologies}: PHP, Wordpress, Magento, Bootstrap
+\end{itemize}
+}
+%\cventry{year--year}{Job title}{Employer}{City}{}{Description}
+
+\section{Freelance Projects}
+%\subsection{Vocational}
+\cventry{2018}{Fanplus}{DevOps}{}{}{
+\begin{itemize}%
+\item \textbf{Technologies}: Golang, Docker, MongoDB
+\end{itemize}}
+%%new
+\cventry{2018}{DibaPoush.ir}{DevOps}{}{}{
+\begin{itemize}%
+\item \textbf{Technologies}: Docker, Nginx, Django, Python, Gunicorn, Supervisor
+\end{itemize}}
+
+\cventry{2018}{Tikschool}{DevOps}{}{}{
+\begin{itemize}%
+\item \textbf{Technologies}: Docker, Nginx, Django, Python, Gunicorn, Supervisor
+\end{itemize}}
+
+\cventry{2017}{Garmsar MRI Center}{Developer}{}{}{
+\begin{itemize}%
+\item \textbf{Technologies}: Python, Telegram Bot API
+\end{itemize}}
+
+\cventry{2017}{Hamyhealth}{Developer and System administrator}{}{}{
+\begin{itemize}%
+\item \textbf{Technologies}: Wordpress, Nginx, Bootstrap, Mysql, PHP
+\end{itemize}}
+
+\cventry{2017}{Tradechallenge}{Developer and System administrator}{}{}{
+\begin{itemize}%
+\item \textbf{Technologies}: Wordpress, Nginx, Bootstrap, Mysql, PHP
+\end{itemize}}
+
+\cventry{2017}{Dalcoub}{Developer and System administrator}{}{}{
+\begin{itemize}%
+\item \textbf{Technologies}: Wordpress, Nginx, Foundation, Mysql, PHP
+\end{itemize}}
+
+\cventry{2016}{Artaoj}{Developer and System administrator}{}{}{
+\begin{itemize}%
+\item \textbf{Technologies}: Wordpress, Nginx, Bootstrap, Mysql, PHP
+\end{itemize}}
+
+\cventry{2016}{PelastAtlas}{Developer and System administrator}{}{}{
+\begin{itemize}%
+\item \textbf{Technologies}: Wordpress, Nginx, Bootstrap, Mysql, PHP
+\end{itemize}}
+
+
+%\cventry{year--year}{Job title}{Employer}{City}{}{Description}
+
+\section{Languages}
+\cvdoubleitem{Persian}{Native}{English}{Fluent}
+
+\section{Skills}
+\cvitem{Operating System}{Linux Family(ubuntu, Debian, CentOS, CoreOS, Fedora), *BSD Family(FreeBSD, OpenBSD, FreeNAS, DragonFly BSD}
+\cvitem{Virtualization}{Docker, LXC, LXD, KVM, VirtualBox(vagrant)}
+\cvitem{Programming languages}{Python, C, bash, java, javascript, HTML(Markup language)}
+\cvitem{Databases}{Mysql, Nosql, Postgresql, MongoDB, Redis}
+\cvitem{Python skills}{Django, Flask, Beautiful soap, Requests, simpleJSON, Pillow}
+\cvitem{Software Development Skill}{RestAPI Design, TDD}
+\cvitem{Web Development}{WordPress (theme, plugin and widget development)}
+
+%\section{Interests}
+%\cvitem{Music}{Classical, Rock, Alternative, Heavy Metal}
+%\cvitem{Photography}{Portrait and Nature}
+%\cvitem{}{Description}
+
+\section{Presentations and workshops}
+\cventry{2012}{Code of conducts in free software communities}{Ubuntu 12.04 release party}{Islamic Azad University, Tehran south branch}{}{}
+\cventry{2013}{An introduction to Chakra GNU/Linux}{Tehran Linux Users Group (LUG)}{DPI college}{}{}
+\cventry{2014}{Opensource hardware introduction}{Tehran Software Freedom day}{Sharif University of Technology}{}{}
+\cventry{2014}{An intro to opensource hardware and its usages}{Tehran Linux Users Group (LUG)}{Toosan}{}{}
+\cventry{2015}{Intro to opensource engineering Softwares}{Karaj Software Freedom day}{-}{}{}
+\cventry{2015}{An intro to Raspberry pi}{Ubuntu 14.04 release party}{University of Tehran}{}{}
+\cventry{2015}{Arduino Workshop}{Tehran software freedom day}{Sharif University of Technology}{}{}
+\cventry{2016}{A roadmap to be a programmer}{Ubuntu 16.04 release party}{University of Isfahan}{}{}
+\cventry{2016}{Arduino Workshop}{Isfahan Software freedom day}{University of Isfahan}{}{}
+\cventry{2016}{Review of software packaging tools}{Isfahan Software freedom day}{University of Isfahan}{}{}
+\cventry{2016}{A review of LXC daemon AKA LXD}{Tehran Linux users Group (LUG)}{University of Tehran}{}{}
+
+
+% Publications from a BibTeX file without multibib
+%  for numerical labels: \renewcommand{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}% CONSIDER MERGING WITH PREAMBLE PART
+%  to redefine the heading string ("Publications"): \renewcommand{\refname}{Articles}
+\nocite{*}
+\bibliographystyle{plain}
+\bibliography{publications}                        % 'publications' is the name of a BibTeX file
+
+% Publications from a BibTeX file using the multibib package
+%\section{Publications}
+%\nocitebook{book1,book2}
+%\bibliographystylebook{plain}
+%\bibliographybook{publications}                   % 'publications' is the name of a BibTeX file
+%\nocitemisc{misc1,misc2,misc3}
+%\bibliographystylemisc{plain}
+%\bibliographymisc{publications}                   % 'publications' is the name of a BibTeX file
+
+\clearpage
+%-----       letter       ---------------------------------------------------------
+% recipient data
+
+
+%\clearpage\end{CJK*}                              % if you are typesetting your resume in Chinese using CJK; the \clearpage is required for fancyhdr to work correctly with CJK, though it kills the page numbering by making \lastpage undefined
+\end{document}
+
+
+%% end of file `template.tex'.
+
