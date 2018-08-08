@@ -3,16 +3,15 @@ dist: trusty
 before_install:
 - sudo apt-get -qq update && sudo apt-get install -y texlive-fonts-recommended texlive-latex-extra texlive-fonts-extra dvipng texlive-latex-recommended texlive-full
 script:
-- mkdir cvbuild
-- pdflatex -interaction=nonstopmode -halt-on-error -output-directory cvbuild AmirHossein_Goodarzi_cv.tex
-before_deploy:
-  - git config --local user.name "AmirHossein Goodarzi"
-  - git config --local user.email "amir007ag@gmail.com"
-  - git tag "$(date +'%Y_%m_%d_%H_%M_%S')-$(git log --format=%h -1)"
+- pdflatex -interaction=nonstopmode -halt-on-error AmirHossein_Goodarzi_cv.tex
+#before_deploy:
+#  - git config --local user.name "AmirHossein Goodarzi"
+#  - git config --local user.email "amir007ag@gmail.com"
+#  - git tag "$(date +'%Y_%m_%d_%H_%M_%S')-$(git log --format=%h -1)"
 deploy:
   provider: releases
   api_key:
     secure: oFwqTB7RCOUqVhrQCJtqQurI1m67rh2+gOmNIR5pAhEbBSrLND1DOO/k4udAtmTFqjN5FqIcUYo1pwz00Ey3pjjKqv8Y5IXPka8iCu8RBCnVrJDqvCMFfTrh2Rlq8ajLfNEalEmPcI3eN7eEHrcPatOxDJOhdxlCuDkUMAeiYWx/g5dgs8ciCRDRMhfVswY/fpkYpdKpWeA7f51Ixpe6yXGeAD01pr97FDKK9wjPrfbgeYSs4A1tdu3n0/tjz3hIXFB21F2SexlkFSaAcbfqXATFlHfBW8EzuwDD+t5fi2PrEdcwV4acLEah6mErUY0KVaRUVrcuyljC5aJcY6WK7DtbWoO5MzE1ptDcrf1RPo8/i/m/bcN3aOI+kabNoQZUi7NpSNP3c/DJttqtBkqcMxu4KWHlcxp6mS2emCcYnwPz/pDvA34L5BIONm5IeNGeYHhe+nLKGdrKnTxyqBFLfxWx/KM4HxgyEMsxU5unsOmeSgAHkJiuPjO0GchkTtTFIdESNQXbmJ72uzrd7nyOGbxr1xWBv3LilZbVZzM1BS6j0q9oMGmr9WIw+CoPazROso9Ax8f+eXRPWBUxCzU3PK6jaFsCJWGlMb9ajfejbZZpaa1giddkSaoaa9owu5oURCZ6UGtKl0VZWexuYMSNj+e37ASgeSuSQTuxers5WCo=
-  file: cvbuild/AmirHossein_Goodarzi_cv.pdf
+  file: AmirHossein_Goodarzi_cv.pdf
   on:
     repo: numb95/Resume
