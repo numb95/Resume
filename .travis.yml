@@ -1,5 +1,5 @@
 sudo: required
-dist: trusty
+dist: bionic
 before_install:
 - sudo apt-get -qq update && sudo apt-get install -y texlive-fonts-recommended texlive-latex-extra dvipng texlive-latex-recommended texlive-plain-generic
 script:
