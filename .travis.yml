@@ -1,7 +1,7 @@
 sudo: required
 dist: bionic
 before_install:
-- sudo apt-get -qq update && sudo apt-get install -y texlive-fonts-recommended texlive-latex-extra dvipng texlive-latex-recommended texlive-plain-generic
+- sudo apt-get -qq update && sudo apt-get install -y texlive-fonts-recommended texlive-latex-extra dvipng texlive-latex-recommended texlive-plain-generic texlive-xetex
 script:
 - mkdir _build
 - pdflatex -output-directory _build ./tex/AmirHosseinGoodarziCV.tex
