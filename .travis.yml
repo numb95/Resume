@@ -20,7 +20,6 @@ deploy:
     secure: oFwqTB7RCOUqVhrQCJtqQurI1m67rh2+gOmNIR5pAhEbBSrLND1DOO/k4udAtmTFqjN5FqIcUYo1pwz00Ey3pjjKqv8Y5IXPka8iCu8RBCnVrJDqvCMFfTrh2Rlq8ajLfNEalEmPcI3eN7eEHrcPatOxDJOhdxlCuDkUMAeiYWx/g5dgs8ciCRDRMhfVswY/fpkYpdKpWeA7f51Ixpe6yXGeAD01pr97FDKK9wjPrfbgeYSs4A1tdu3n0/tjz3hIXFB21F2SexlkFSaAcbfqXATFlHfBW8EzuwDD+t5fi2PrEdcwV4acLEah6mErUY0KVaRUVrcuyljC5aJcY6WK7DtbWoO5MzE1ptDcrf1RPo8/i/m/bcN3aOI+kabNoQZUi7NpSNP3c/DJttqtBkqcMxu4KWHlcxp6mS2emCcYnwPz/pDvA34L5BIONm5IeNGeYHhe+nLKGdrKnTxyqBFLfxWx/KM4HxgyEMsxU5unsOmeSgAHkJiuPjO0GchkTtTFIdESNQXbmJ72uzrd7nyOGbxr1xWBv3LilZbVZzM1BS6j0q9oMGmr9WIw+CoPazROso9Ax8f+eXRPWBUxCzU3PK6jaFsCJWGlMb9ajfejbZZpaa1giddkSaoaa9owu5oURCZ6UGtKl0VZWexuYMSNj+e37ASgeSuSQTuxers5WCo=
   file: 
     - ./_build/AmirHosseinGoodarziCV.pdf
-    - ./_build/AmirHosseinGoodarziCV.html
   skip_cleanup: true
   on:
     repo: numb95/Resume
